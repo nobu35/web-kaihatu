@@ -39,6 +39,11 @@ class PostController extends Controller
 
     public function store(Request $request)
     {
+        $request->validate([
+            'content' => 'required',
+            'tag' => 'required',
+            'img_path' => 'required',
+        ]);
         $img = $request->file('img_path');
         $path = $img->store('img','public');
         $id = Auth::id();
