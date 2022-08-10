@@ -21,6 +21,7 @@ class PostController extends Controller
 
     public function search(Request $request)
     {
+        // 検索機能
         $keyword = $request->input('keyword');
 
         $query = Post::query();
@@ -39,15 +40,18 @@ class PostController extends Controller
 
     public function store(Request $request)
     {
+        // バリテーション
         $request->validate([
             'content' => 'required',
             'tag' => 'required',
             'img_path' => 'required',
         ]);
+        // imgファイル設定
         $img = $request->file('img_path');
         $path = $img->store('img','public');
         $id = Auth::id();
 
+        // DB登録
         $post = new Post;
         $post->user_id = $id;
         $post->img_path = $path;

@@ -4,6 +4,7 @@
             {{ __($keyword.'検索一覧') }}
         </h2>
     </x-slot>
+    <!-- 検索一覧 -->
     <div>
     @foreach($posts as $post)
         @foreach($users as $user)
