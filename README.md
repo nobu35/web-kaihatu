@@ -1,3 +1,20 @@
+使用した技術
+php
+laravel/sail
+docker
+
+環境構築の参考にしたサイト
+https://chigusa-web.com/blog/laravel-sail-mac/
+
+アプリの説明
+http://localhost/　
+で登録ボタンを押してユーザー登録　
+ホーム画面で投稿と検索ができる
+
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
