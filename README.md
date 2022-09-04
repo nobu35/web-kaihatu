@@ -6,7 +6,13 @@ docker
 環境構築の参考にしたサイト
 https://chigusa-web.com/blog/laravel-sail-mac/
 
-アプリの説明
+アプリの使用方法
+上記の環境で以下のコマンドを実行
+
+コマンド　./vendor/bin/sail up
+
+コマンド　npm install && npm run dev
+　
 http://localhost/　
 で登録ボタンを押してユーザー登録　
 ホーム画面で投稿と検索ができる
